@@ -1,5 +1,14 @@
 /* Codeblock Stuff */
 .enhanced-codeblocks {
+  &.numbered-codeblocks {
+    pre::after {
+      content: "Codeblock " counter(codeblock) " (" attr(class) " )";
+      font-size: 0.8em;
+      color: gray;
+      text-align: right;
+    }
+  }
+
   pre {
     font-family: var(--pdf-mono-font) !important;
     counter-increment: codeblock;
@@ -9,18 +18,16 @@
     border-bottom: 1pt solid black !important;
     border-radius: 0 !important;
 
-    &::after {
-      content: "Codeblock " counter(codeblock) ":" attr(class);
-      font-size: 0.8em;
-      color: gray;
-      text-align: right;
-    }
-
     code {
       font-family: var(--pdf-mono-font) !important;
       opacity: 100% !important;
       background-color: transparent;
     }
+  }
+
+  p code {
+    padding: 0;
+    background-color: transparent;
   }
 }
 

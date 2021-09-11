@@ -2,18 +2,17 @@
 .enhanced-page-breaks {
   hr {
     page-break-after: always;
-    display: none;
-  }
-
-  .image-embed,
-  img {
-    page-break-inside: avoid;
   }
 
   .markdown-preview-view hr {
     border: none;
     border-top: 2px solid;
     border-color: transparent;
+  }
+
+  .image-embed,
+  img {
+    page-break-inside: avoid;
   }
 
   blockquote,

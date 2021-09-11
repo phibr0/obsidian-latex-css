@@ -25,12 +25,12 @@ settings:
         title: PDF Monospace Font
         description: "Monospaced Font used for the exported PDF's (For use in Code)"
         type: variable-text
-        default: "monospace, Consolas"
+        default: Consolas
     - 
         id: enhanced-everything
         title: LaTeX like Enhancements
         type: heading
-        level: 3
+        level: 2
         collapsed: true
     - 
         id: enhanced-page-breaks
@@ -49,6 +49,17 @@ settings:
         type: class-toggle
         default: true
     - 
+        id: enhanced-images
+        title: Enhanced Images
+        type: class-toggle
+        default: true
+    - 
+        id: codeblocks
+        title: Codeblocks
+        type: heading
+        level: 3
+        collapsed: true
+    - 
         id: enhanced-codeblocks
         title: Enhanced Codeblocks
         type: class-toggle
@@ -61,21 +72,10 @@ settings:
         format: hex
         default: '#FFFAF0'
     - 
-        id: enhanced-images
-        title: Enhanced Images
-        type: class-toggle
-        default: true
-    - 
-        id: image-alt-text
-        title: Show Image Numbering and Caption
-        description: "Use it like so: [[Image.png|Caption here]]"
-        type: class-toggle
-        default: true
-    - 
         id: numbered-anything
         title: Numbering
         type: heading
-        level: 3
+        level: 2
         collapsed: true
     - 
         id: numbered-headings
@@ -87,6 +87,17 @@ settings:
         id: numbered-math
         title: Numbered Math Environments
         description: "Number the Math Environments in your PDF."
+        type: class-toggle
+        default: true
+    - 
+        id: image-alt-text
+        title: Show Image Numbering and Caption
+        description: "Use it like so: [[Image.png|Caption here]]"
+        type: class-toggle
+        default: true
+    - 
+        id: numbered-codeblocks
+        title: Numbered Codeblocks
         type: class-toggle
         default: true
 */
