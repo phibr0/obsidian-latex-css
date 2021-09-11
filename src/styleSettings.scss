@@ -1,0 +1,81 @@
+/* @settings
+
+name: LaTeX like PDF's
+id: latex-pdf-css
+settings:
+    - 
+        id: pdf-font
+        title: PDF Font
+        description: Font used for the exported PDF's (The CSS Snippet includes the Computer Modern Font)
+        type: variable-text
+        default: "CMU Serif"
+    - 
+        id: pdf-mono-font
+        title: PDF Monospace Font
+        description: "Monospaced Font used for the exported PDF's (For use in Code)"
+        type: variable-text
+        default: "monospace, Consolas"
+    - 
+        id: enhanced-everything
+        title: LaTeX like Enhancements
+        type: heading
+        level: 3
+        collapsed: true
+    - 
+        id: enhanced-page-breaks
+        title: Enhanced Page Breaks
+        description: "Improves Page Breaking in Obsidian's PDF's"
+        type: class-toggle
+        default: true
+    - 
+        id: enhanced-tables
+        title: Enhanced Tables
+        type: class-toggle
+        default: true
+    - 
+        id: enhanced-blockquotes
+        title: Enhanced Blockquotes
+        type: class-toggle
+        default: true
+    - 
+        id: enhanced-codeblocks
+        title: Enhanced Codeblocks
+        type: class-toggle
+        default: true
+    - 
+        id: codeblock-background
+        title: Codeblock Background Color
+        type: variable-color
+        opacity: false
+        format: hex
+        default: '#FFFAF0'
+    - 
+        id: enhanced-images
+        title: Enhanced Images
+        type: class-toggle
+        default: true
+    - 
+        id: image-alt-text
+        title: Show Image Numbering and Caption
+        description: "Use it like so: [[Image.png|Caption here]]"
+        type: class-toggle
+        default: true
+    - 
+        id: numbered-anything
+        title: Numbering
+        type: heading
+        level: 3
+        collapsed: true
+    - 
+        id: numbered-headings
+        title: Numbered Headings
+        description: "Number the Headings in your PDF. For example:\n1. Heading one\n1.1 Subheading"
+        type: class-toggle
+        default: true
+    - 
+        id: numbered-math
+        title: Numbered Math Environments
+        description: "Number the Math Environments in your PDF."
+        type: class-toggle
+        default: true
+*/

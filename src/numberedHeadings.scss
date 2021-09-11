@@ -1,0 +1,43 @@
+/* Heading Numbers */
+.numbered-headings {
+  body {
+    counter-reset: section;
+  }
+
+  h2 {
+    counter-reset: sub-section;
+    counter-increment: section;
+
+    &::before {
+      content: counter(section) ". ";
+    }
+  }
+
+  h3 {
+    counter-reset: composite;
+    counter-increment: sub-section;
+
+    &::before {
+      content: counter(section) "." counter(sub-section) " ";
+    }
+  }
+
+  h4 {
+    counter-reset: detail;
+    counter-increment: composite;
+
+    &::before {
+      content: counter(section) "." counter(sub-section) "." counter(composite)
+        " ";
+    }
+  }
+
+  h5 {
+    counter-increment: detail;
+
+    &::before {
+      content: counter(section) "." counter(sub-section) "." counter(composite)
+        "." counter(detail) " ";
+    }
+  }
+}

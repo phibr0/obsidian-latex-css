@@ -1,0 +1,33 @@
+/* Page Break Stuff */
+.enhanced-page-breaks {
+  hr {
+    page-break-after: always;
+    display: none;
+  }
+
+  .image-embed,
+  img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-preview-view hr {
+    border: none;
+    border-top: 2px solid;
+    border-color: transparent;
+  }
+
+  blockquote,
+  table,
+  pre {
+    page-break-inside: avoid;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    page-break-after: avoid;
+  }
+}

@@ -1,0 +1,25 @@
+.MJX-TEX {
+  font-size: 110% !important;
+}
+
+body {
+  counter-reset: math-block;
+}
+
+.numbered-math {
+  .math-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    counter-increment: math-block;
+  }
+
+  .math-block::before {
+    content: "(" counter(math-block) ")";
+    visibility: hidden;
+  }
+
+  .math-block::after {
+    content: "(" counter(math-block) ")";
+  }
+}

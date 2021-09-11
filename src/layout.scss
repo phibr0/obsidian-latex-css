@@ -1,0 +1,13 @@
+body {
+  --default-font: var(--pdf-font);
+  --text-preview: var(--pdf-font);
+  text-align: justify;
+}
+
+h1 {
+  margin-top: 0 !important;
+}
+
+@page {
+  margin: 2.33cm;
+}

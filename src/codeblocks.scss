@@ -1,0 +1,29 @@
+/* Codeblock Stuff */
+.enhanced-codeblocks {
+  pre {
+    font-family: var(--pdf-mono-font) !important;
+    counter-increment: codeblock;
+    background-color: var(--codeblock-background) !important;
+    margin: 1rem 0.2rem !important;
+    border-top: 1pt solid black !important;
+    border-bottom: 1pt solid black !important;
+    border-radius: 0 !important;
+
+    &::after {
+      content: "Codeblock " counter(codeblock) ":" attr(class);
+      font-size: 0.8em;
+      color: gray;
+      text-align: right;
+    }
+
+    code {
+      font-family: var(--pdf-mono-font) !important;
+      opacity: 100% !important;
+      background-color: transparent;
+    }
+  }
+}
+
+body {
+  counter-reset: codeblock;
+}

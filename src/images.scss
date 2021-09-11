@@ -1,0 +1,18 @@
+.enhanced-images {
+  &.image-alt-text {
+    span.image-embed {
+      counter-increment: image;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.6em;
+      &::after {
+        content: "Image " counter(image) ": "attr(alt);
+        text-align: center;
+      }
+    }
+  }
+}
+
+body {
+  counter-reset: image;
+}
