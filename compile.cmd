@@ -1,0 +1,1 @@
+sass .\latex.scss .\latex.css --no-source-map

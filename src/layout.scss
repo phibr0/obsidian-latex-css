@@ -2,6 +2,7 @@ body {
   --default-font: var(--pdf-font);
   --text-preview: var(--pdf-font);
   text-align: justify;
+  line-height: 1.8;
 }
 
 h1 {
@@ -10,4 +11,9 @@ h1 {
 
 @page {
   margin: 2.33cm;
+}
+
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600 !important;
 }

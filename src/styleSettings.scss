@@ -1,4 +1,15 @@
-/* @settings
+/*
+
+LaTeX inspired PDF Export Theme for https://obsidian.md 
+Made by @phibr0 on Github
+
+Tested with Obsidians default Theme and the California Coast Community Theme
+
+Please don't share this File with others, instead share this Link: https://www.buymeacoffee.com/phibr0/e/42263
+
+*/
+
+/*@settings
 
 name: LaTeX like PDF's
 id: latex-pdf-css
@@ -6,15 +17,15 @@ settings:
     - 
         id: pdf-font
         title: PDF Font
-        description: Font used for the exported PDF's (The CSS Snippet includes the Computer Modern Font)
+        description: Font used for the exported PDF's (The CSS Snippet includes the Computer Modern Font and LM Roman 10)
         type: variable-text
-        default: "CMU Serif"
+        default: '"LM Roman 10"'
     - 
         id: pdf-mono-font
         title: PDF Monospace Font
         description: "Monospaced Font used for the exported PDF's (For use in Code)"
         type: variable-text
-        default: Consolas
+        default: '"Consolas"'
     - 
         id: enhanced-everything
         title: LaTeX like Enhancements
